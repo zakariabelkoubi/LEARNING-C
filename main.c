@@ -2,22 +2,34 @@
 
 int main()
 {
-    //EXEMPLE TO SHOW TEXT OR NUMBER ON SCREEN
-    printf("HI EVERY ONE\n ");
-    //EXEMPELE TO MAKE NEW LINE
-    printf("to add a nee line\n");
-    printf("and that's it\n ");
-    //EXEMPEL TO MAKE SPACE
-    printf("to make space use \t and that's it\n ");
-    //EXEMPELE TO ADD INTEGER NIMBER
-    int x=6;
-    printf("%d", x);
-    //EXEMPELE TO ADD A FLOAT NUBER
-    float y=6.5;
-    printf("%.1f \n",y);
-    //EXEMPELE TO USE  SCANF
-    int p;
-    printf("writ a integer number");
-    scanf("%d");
+    //EXEMPLE-->CALCULATE THE AREA OF SHAPES
+    //EXEMPLE-->RECTANGLE :
+    int width , height , area;
+
+    //the width of rect
+    printf("enter the width:");
+    scanf("%d", &width);
+
+    //the height of the rect
+    printf("enter the height:");
+    scanf("%d", &height);
+
+    //the area of the rect
+    area= width*height;
+    printf("the area is %d\n" ,area);
+
+    //EXEMPLE-->CIRCLE
+    float x=3.14;
+    float y;
+    float res;
+    printf ("the constant value of radius of the circle is %f\n" , x);
+    //THE AREA OF THE CIRCLE
+    printf ("enter the radius area\n");
+    scanf("%f" , &y);
+    //THE RESULT
+    res = x*y*y;
+    printf("the result is %f" , res);
+
+
     return 0;
 }
